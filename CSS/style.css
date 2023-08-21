@@ -1,0 +1,297 @@
+body {
+    background-color: rgb(243, 243, 240);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container-flex {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 15rem;
+}
+
+.presentacion {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.sobre_mi {
+    max-width: 45rem;
+}
+
+.pres {
+    margin-bottom: 3rem;
+}
+
+.abm {
+    font-size: 1.3rem;
+    max-width: 45rem;
+}
+
+#Inicio {
+    display: flex;
+    background-image: url(../Resource/juyt_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+#Inicio .container-fluid-I {
+    text-align: center;
+}
+
+#Inicio h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+#Inicio .container-fluid-I p {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+header .container-fluid .container-sm a {
+    text-decoration: none;
+    color: black;
+}
+
+header .container-fluid {
+    background-color: #fff;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
+}
+
+.btn {
+    background-color: #FFC300;
+    max-width: 15rem;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
+
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.btn:hover {
+    background-color: #FFC300;
+    animation: mover 1s ease-in-out infinite
+}
+
+.d {
+    display: flex;
+    max-width: 15rem;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container-fluid h5 {
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+header .container-fluid img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+header .container-fluid .container-sm {
+    display: flex;
+    justify-content: right;
+    margin-left: 10rem;
+}
+
+header .container-fluid .container-sm ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 0.6rem;
+}
+
+header .container-fluid .container-sm li {
+    margin-left: 2.5rem;
+    font-weight: 500;
+}
+
+#abm {
+    background-image: url(../Resource/fondo2.jpg);
+    background-size: cover;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#abm p {
+    margin-top: 2rem;
+}
+
+.habilidades h1 {}
+
+.habilidades .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 20rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.habilidad {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: larger;
+    background-color: gainsboro;
+    padding: .4rem;
+    border-radius: 5%;
+}
+
+#proyectos {
+    background-color: #fafafa;
+    padding-bottom: 3rem;
+}
+
+#proyectos .titulo {
+    margin-top: 3rem;
+}
+
+.pro1 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.pro1 img {
+    max-width: 100%;
+    max-height: 15rem;
+    margin-top: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3)
+}
+
+.info1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.info1 svg {
+    width: 5rem;
+    height: 5rem;
+}
+
+.info1 a {
+    background-color: transparent;
+}
+
+.pro1:hover .info1 {
+    opacity: 1;
+}
+
+.info1 p {
+    color: white;
+    text-align: center;
+}
+
+#contactame h3 {
+    margin-top: 3rem;
+}
+
+#contactame form {
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__form-container {
+    box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0;
+    background: #fff;
+    padding: 4rem;
+    margin-top: 6rem;
+    max-width: 80rem;
+    text-align: right;
+    width: 95%;
+    border-radius: 5px;
+    margin: 5rem auto 0 auto;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.todo {
+    width: 100%;
+}
+
+.contact__form-input {
+    color: #333;
+    padding: 2rem;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 1rem;
+    letter-spacing: 0;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.contact__form-label {
+    color: #666;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: #333;
+    padding: 3rem;
+}
+
+footer svg {
+    max-width: 5rem;
+    max-height: 5rem;
+    margin-left: 2rem;
+}
